@@ -1,0 +1,235 @@
+/* CSS RESET & VARIABLES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-green: #2AD352; /* Vibrant green from the "Create Account" button  */
+            --bg-dark: #0f1214; /* Dark background for right panel */
+            --input-bg: #1e2329; /* Darker input background */
+            --text-main: #ffffff;
+            --text-muted: #889096;
+            --border-color: #2f363d;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* LAYOUT CONTAINER */
+        .container {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+
+        /* LEFT PANEL - IMAGE */
+        .left-panel {
+            flex: 1;
+            background-image: url('../Images/plant.jpg');
+            background-position: center;
+            background-size: cover;
+            display: none; /* Hidden on mobile by default */
+        }
+
+        /* RIGHT PANEL - FORM */
+        .right-panel {
+            flex: 1;
+            background-color: var(--bg-dark);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            color: var(--text-main);
+        }
+
+        .form-wrapper {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* LOGO AREA */
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .logo-icon {
+            /* color: var(--primary-green); */
+            background: url('../Images/Plant\ Guard\ LOGO.png');
+            border-radius: 50%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            font-size: 1.2rem;
+            display: inline-block;
+        }
+
+        /* HEADINGS */
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        /* FORM ELEMENTS */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #b0b3b8;
+        }
+
+        .input-container {
+            position: relative;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            background-color: var(--input-bg);
+            border: 1px solid transparent;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input::placeholder {
+            color: #555;
+        }
+
+        input:focus {
+            border-color: var(--primary-green);
+        }
+
+        /* Icons inside inputs (Simulated with absolute positioning) */
+        .input-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #555;
+            pointer-events: none;
+        }
+
+        /* BUTTONS */
+        .btn-primary {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--primary-green);
+            color: #000; /* Dark text on green button for contrast */
+            border: none;
+            border-radius: 25px; /* Rounded pill shape  */
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: opacity 0.2s;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+
+        /* DIVIDER */
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 25px 0;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .divider span {
+            padding: 0 10px;
+        }
+
+        /* SOCIAL LOGIN */
+        .social-buttons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .btn-social {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            background-color: var(--input-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: white;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .btn-social:hover {
+            background-color: #2b323b;
+        }
+
+        .btn-social i {
+            margin-right: 8px;
+        }
+
+        /* FOOTER */
+        .footer-link {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .footer-link a {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE */
+        @media (min-width: 768px) {
+            .left-panel {
+                display: block; /* Show image on desktop */
+            }
+        }
