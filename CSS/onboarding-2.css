@@ -8,7 +8,7 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #111827; /* gray-900 */
+            background-color: #112115; /* dark green background */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -136,7 +136,7 @@
 
         .btn-primary {
             width: 100%;
-            background-color: #22c55e; /* green-500 */
+            background-color: #19e64d; /* green-500 */
             color: black;
             font-weight: 700;
             padding: 1rem 1.5rem;

@@ -7,8 +7,8 @@
         }
 
         :root {
-            --primary-green: #2AD352; /* Vibrant green from the "Create Account" button  */
-            --bg-dark: #0f1214; /* Dark background for right panel */
+            --primary-green: #19e64d; /* Vibrant green from the "Create Account" button  */
+            --bg-dark: #112115; /* Dark green background for right panel */
             --input-bg: #1e2329; /* Darker input background */
             --text-main: #ffffff;
             --text-muted: #889096;
