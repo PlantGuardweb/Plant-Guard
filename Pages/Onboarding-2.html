@@ -3,10 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PlantGuard AI - One Last Step</title>
+    <!-- Standard CSS Styles -->
+    <link rel="stylesheet" href="../CSS/onboarding-2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <P>its Onboarding-3</P>
-    <a href="./Home.html">Home page</a>
+
+    <!-- Mobile Container -->
+    <div class="app-container">
+        
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="bar-segment"></div>
+            <div class="bar-segment"></div>
+            <div class="bar-segment active"></div>
+        </div>
+
+        <!-- Header Section -->
+        <div class="header">
+            <h1>One last step</h1>
+            <p>
+                To get the most out of PlantGuard AI, we need your permission to access your camera and storage
+            </p>
+        </div>
+
+        <!-- Permissions List -->
+        <div class="permissions-list">
+            
+            <!-- Camera Access Card -->
+            <div class="permission-card">
+                <div class="icon-circle">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="card-text">
+                    <h3>Camera Access</h3>
+                    <p>To scan your plants for diseases in real-time</p>
+                </div>
+            </div>
+
+            <!-- Storage Access Card -->
+            <div class="permission-card">
+                <div class="icon-circle">
+                    <i class="fas fa-folder"></i>
+                </div>
+                <div class="card-text">
+                    <h3>Storage Access</h3>
+                    <p>To save your plant photos and care reports</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer / Button -->
+        <div class="footer">
+            <button onclick="requestPermissions()" class="btn-primary">
+                Get Started <i class="fas fa-arrow-right"></i>
+            </button>
+            
+            <div class="back-link">
+                <a href="#">Back to Sign Up</a>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
