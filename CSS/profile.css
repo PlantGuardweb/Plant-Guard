@@ -7,7 +7,7 @@
         }
 
         body {
-            background-color: #0b120f; /* Very dark green/black background */
+            background-color: #112115; /* Very dark green/black background */
             color: #ffffff;
             display: flex;
             min-height: 100vh;
@@ -77,11 +77,11 @@
         /* Active State for Profile */
         .nav-item.active {
             background-color: #1a4d2e; /* Darker green bg for active item */
-            color: #4ade80; /* Bright green text */
+            color: #19e64d; /* Bright green text */
         }
         
         .nav-item.active i {
-            color: #4ade80;
+            color: #19e64d;
         }
 
         /* --- MAIN CONTENT --- */

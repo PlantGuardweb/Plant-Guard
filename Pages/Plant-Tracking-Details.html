@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantGuard AI - Living Room Monstera</title>
+    <link rel="stylesheet" href="../CSS/plant-tracking-details.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">
+            <!-- Leaf Logo SVG -->
+            <div class="brand-logo"></div>
+            PlantGuard Web
+        </div>
+        <div class="breadcrumbs">
+            My Garden / <span>Living Room Monstera</span>
+        </div>
+        <div class="header-actions">
+            <button class="icon-btn" title="Back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </button>
+            <button class="icon-btn" title="Edit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Left Column: Images -->
+        <div class="plant-gallery">
+            <div class="main-image">
+                <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000&auto=format&fit=crop" alt="Living Room Monstera">
+            </div>
+            <div class="thumbnails">
+                <div class="thumb">
+                    <img src="../Images/leaf.png" alt="Leaf Close up">
+                </div>
+                <div class="thumb">
+                    <img src="../Images/stem.jpg" alt="Stem">
+                </div>
+                <div class="thumb">
+                    <img src="../Images/growth.jpg" alt="New Growth">
+                </div>
+            </div>
+            <!-- Scan Button Moved Here -->
+            <button class="scan-btn">
+                <svg style="width: 20px; height: 20px; color: #000;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                Scan Again
+            </button>
+        </div>
+
+        <!-- Right Column: Details & Stats -->
+        <div class="plant-details">
+            
+            <div class="header-section">
+                <div class="plant-title">
+                    <h1>Living Room Monstera</h1>
+                    <p class="scientific-name">Monstera Deliciosa</p>
+                </div>
+                <!-- Button removed from here -->
+            </div>
+
+            <!-- Tabs -->
+            <div class="timeline-section">
+                <div style="margin-bottom: 10px; font-weight: 600; font-size: 1.1rem;">Health Timeline</div>
+                <div class="timeline-tabs">
+                    <div class="tab">Week</div>
+                    <div class="tab active">Month</div>
+                    <div class="tab">Year</div>
+                </div>
+            </div>
+
+            <!-- Grid: Notes & Reminders -->
+            <div class="dashboard-grid">
+                
+                <!-- Notes Section (Left side of grid) -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Notes</span>
+                        <span class="view-all">+ Add Note</span>
+                    </div>
+                    <div class="note-timeline">
+                        <div class="note-item">
+                            <div class="note-date">Aug 10, 2024</div>
+                            <div class="note-content">
+                                Noticed some slight yellowing on one of the older leaves. Watered today. Will monitor.
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <div class="note-date">Aug 03, 2024</div>
+                            <div class="note-content">
+                                Repotted into a slightly larger terracotta pot with fresh aroid mix. Roots looked healthy.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reminders Card (Right side of grid) -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Reminders</span>
+                    </div>
+                    <div class="reminder-list">
+                        <!-- Watering -->
+                        <div class="reminder-item">
+                            <div class="icon-box">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c4.97 0 9-4.03 9-9c0-4.97-9-13-9-13S3 8.03 3 13c0 4.97 4.03 9 9 9z"/></svg>
+                            </div>
+                            <div class="reminder-info">
+                                <h4>Watering</h4>
+                                <p>In 3 days</p>
+                            </div>
+                        </div>
+                        <!-- Fertilizer -->
+                        <div class="reminder-item">
+                            <div class="icon-box" style="background-color: rgba(241, 196, 15, 0.1); color: var(--accent-yellow);">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <div class="reminder-info">
+                                <h4>Fertilizer</h4>
+                                <p>Next month</p>
+                            </div>
+                        </div>
+                        <!-- Repotting -->
+                        <div class="reminder-item">
+                            <div class="icon-box" style="background-color: rgba(231, 76, 60, 0.1); color: var(--accent-red);">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M5 6v14a2 2 0 0 1-2 2h18a2 2 0 0 1 2-2V6"/></svg>
+                            </div>
+                            <div class="reminder-info">
+                                <h4>Repotting</h4>
+                                <p>In 8 months</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Recent Scans (Bottom, Full Width) -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Recent Scans</span>
+                    <span class="view-all">View All</span>
+                </div>
+                <div class="scan-list">
+                    <div class="scan-item">
+                        <div class="scan-left">
+                            <span class="scan-status" style="color: var(--primary-green);">Healthy</span>
+                            <span class="scan-date">Aug 12, 2024</span>
+                        </div>
+                        <div class="scan-score">
+                            95% <span style="font-size: 0.8rem;">›</span>
+                        </div>
+                    </div>
+                    <div class="scan-item">
+                        <div class="scan-left">
+                            <span class="scan-status" style="color: var(--accent-yellow);">Nutrient Deficiency</span>
+                            <span class="scan-date">Aug 10, 2024</span>
+                        </div>
+                        <div class="scan-score" style="color: var(--accent-yellow);">
+                            88% <span style="font-size: 0.8rem;">›</span>
+                        </div>
+                    </div>
+                    <div class="scan-item">
+                        <div class="scan-left">
+                            <span class="scan-status" style="color: var(--primary-green);">Healthy</span>
+                            <span class="scan-date">Aug 03, 2024</span>
+                        </div>
+                        <div class="scan-score">
+                            92% <span style="font-size: 0.8rem;">›</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
