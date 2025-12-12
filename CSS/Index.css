@@ -1,82 +1,106 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     background-color: #102216;
-    color: white;
-    line-height: 1.6;
     display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    flex-direction : row;
+ 
 }
 
-.logo {
-    width:50px;
-    height:auto;
+/* ____________________________________________________left image section css_________________________________________________________ */
+
+#left_img{
+    width: 750px;
+    height:773px;
+}
+
+#right_content{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ____________________________________________________heading section css_________________________________________________________ */
+
+#right_content h1{
+    color: white;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ____________________________________________________paragraph section css_________________________________________________________ */
+
+#pera {
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 500px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ____________________________________________________keypoints section css_________________________________________________________ */
+.keypoints{
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+    line-height: 1.8;
+    display:flex;
+    flex-direction: row;
+    gap :20px;
+}
+
+/* ____________________________________________________keypooint icons section css_________________________________________________________ */
+.keyicons{
+   background-color: #0b3728;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.header p {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-
-a {
-    color: #13ec5b;
-}
-
-.plant {
-    border-radius: 25px;
-    width: auto;
-    height: 400px;
-}
-
-button {
-    background-color: #13ec5b;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 16px;
+.keyicons img{
+    width: 30px;
+    height: 30px;
     margin-top: 10px;
-    width: 250px;
-    text-align: center;
+    margin-left: 10px;
 }
 
-button a {
-    color: #102216;
-    font-weight:bold;
-    text-decoration: none;
-}
 
-#content {
-    display : flex;
+/* ____________________________________________________keypoint content section css_________________________________________________________ */
+
+.keycontent{
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 10px;
+    gap: 0px;
 }
 
-#content_p1 {
-    font-size: 35px;
-    font-weight: bold;
-    width: 450px;
-    text-align: center;
+.keycontent h4{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
-#content_p2 {
-    font-size: 16px;
-    text-align: center;
-    width: 400px;
+/* ____________________________________________________button section css_________________________________________________________ */
+button{
+    width: 300px;
+    height: 50px;
+    background-color: #2acb77;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-left: 250px;
+    margin-top: 50px;
+    font-size: 18px;
+    cursor: pointer;
 }
