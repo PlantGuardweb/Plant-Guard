@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantGuard AI - Profile</title>
+    <link rel="stylesheet" href="../CSS/profile.css">
+    <!-- Using FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Using Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <!-- Branding could go here, but omitted to match specific image view -->
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-expand"></i> <!-- Scan Icon approximation -->
+                    <span>Scan</span>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Plant & Disease Library</span>
+                </li>
+                <li class="nav-item active">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- User Profile Card -->
+            <div class="section-card profile-header-card">
+                <div class="profile-header">
+                    <div class="profile-info">
+                        <div class="avatar">
+                            <!-- Placeholder for user image -->
+                            <i class="fa-solid fa-user" style="font-size: 30px; color: #fff;"></i>
+                        </div>
+                        <div class="user-details">
+                            <h2>Alex Green</h2>
+                            <p>alex.green@example.com</p>
+                        </div>
+                    </div>
+                    <div class="edit-btn">Edit Profile</div>
+                </div>
+                
+                <div class="logout-container">
+                    <div class="logout-btn">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Plants Section -->
+            <h3 class="section-title">My Plants</h3>
+            <div class="section-card">
+                <div class="list-row">
+                    <div class="row-left">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                        <span class="row-title">Saved Scans</span>
+                    </div>
+                    <div class="row-right">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="list-row">
+                    <div class="row-left">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="row-text">
+                            <span class="row-title">Plant Reminders</span>
+                            <span class="row-subtitle">Watering, fertilizing, etc.</span>
+                        </div>
+                    </div>
+                    <div class="row-right">
+                        <!-- Toggle Switch -->
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preferences Section -->
+            <h3 class="section-title">Preferences</h3>
+            <div class="section-card">
+                <div class="list-row">
+                    <div class="row-left">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <span class="row-title">Language</span>
+                    </div>
+                    <div class="row-right">
+                        <span>English</span>
+                    </div>
+                </div>
+
+                <div class="list-row">
+                    <div class="row-left">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                        </div>
+                        <div class="row-text">
+                            <span class="row-title">App Theme</span>
+                            <span class="row-subtitle">Switch between light and dark mode</span>
+                        </div>
+                    </div>
+                    <div class="row-right">
+                        <!-- Toggle Switch -->
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support & Legal Section -->
+            <h3 class="section-title">Support & Legal</h3>
+            <div class="section-card">
+                <div class="list-row">
+                    <div class="row-left">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <span class="row-title">Privacy & Permissions</span>
+                    </div>
+                    <div class="row-right">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="list-row">
+                    <div class="row-left">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <span class="row-title">About App</span>
+                    </div>
+                    <div class="row-right">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
