@@ -10,15 +10,297 @@
 
     <!--_______________________________Navigation side__________________________________________________-->
     <nav>
-        <div><img src="">Plant Guard</div>
-        <a href="./Home.html"><button><img src="">Home</button></a>
-        <a href="./Scan.html"><button><img src="">Scan</button></a>
-        <a href="./Plant & Disease library.html"><button><img src="">Plant & Disease Library</button></a>
-        <a href="./Profile.html"><button><img src="">Profile</button></a>
+        <div><img src="../Images/Plant Guard LOGO.png">Plant Guard</div>
+        <a href="./Home.html"><button style="background-color: #096609;"><img class="navigation" src="../Icons/home.png">Home</button></a>
+        <a href="./Scan.html"><button><img class="navigation" src="../Icons/scanner.png">Scan</button></a>
+        <a href="./Plant & Disease library.html"><button><img class="navigation" src="../Icons/books-stack-of-three.png">Library</button></a>
+        <a href="./Profile.html"><button><img class="navigation" src="../Icons/user.png">Profile</button></a>
     </nav>
+    <div class="container">
+    <!--_______________________________Header section__________________________________________________-->
+    <header>
+        <div><img src="../Icons/bell.png"></div>
+        <button><img src="../Icons/user.png"></button>
+    </header>
 
-    <!--_______________________________Main section__________________________________________________-->
-    <main>hi</main>
+<!--______________________________________Main section__________________________________________________-->
+    <main>
+        <div class="left">
 
+<!--____________________________________search bar section________________________________________________-->
+            <search-bar>
+                <input id="search_bar" src="../Icons/search white.png" type="text" placeholder="Search plants or diseases tips and more...">
+                <button id="search_button"><img src="../Icons/search white.png"></button>
+            </search-bar>
+<!--__________________________________recently viewed section________________________________________________-->
+
+            <div class="recently-viewed-header">
+                <h2 id="recently-viewed-title">Recently Viewed</h2>
+                <div class="scroll-buttons">
+                    <button class="scroll-button" id="scroll-left"><img src="../Icons/left-arrow.png"></button>
+                    <button class="scroll-button" id="scroll-right"><img src="../Icons/to-right.png"></button>
+                </div>
+            </div>
+            <div class="recently-viewed-container">
+                <div class="recently-viewed">
+                    <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Fiddle Leaf Fig</h3>
+                            <p>seen: 1 days ago</p>
+                        </div>
+                    </div>
+                    <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Snake Plant</h3>
+                            <p>seen: 2 days ago</p>
+                        </div>
+                    </div>
+                                        <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Snake Plant</h3>
+                            <p>seen: 3 days ago</p>
+                        </div>
+                    </div>
+                                        <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Snake Plant</h3>
+                            <p>seen: 4 days ago</p>
+                        </div>
+                    </div>
+                                        <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Snake Plant</h3>
+                            <p>seen: 5 days ago</p>
+                        </div>
+                    </div>
+                                        <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Snake Plant</h3>
+                            <p>seen: 6 days ago</p>
+                        </div>
+                    </div>
+                                        <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Snake Plant</h3>
+                            <p>seen: 7 days ago</p>
+                        </div>
+                    </div>
+                    <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Snake Plant</h3>
+                            <p>seen: 8 days ago</p>
+                        </div>
+                    </div>
+                    <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Snake Plant</h3>
+                            <p>seen: 9 days ago</p>
+                        </div>
+                    </div>
+                    <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Snake Plant</h3>
+                            <p>seen: 10 days ago</p>
+                        </div>
+                    </div>
+                    <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Snake Plant</h3>
+                            <p>seen: 11 days ago</p>
+                        </div>
+                    </div>
+                    <div class="recent-item">
+                        <img src="../Images/welcome background.png">
+                        <div class="recent-info">
+                            <h3>Snake Plant</h3>
+                            <p>seen: 12 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tips-and-reminders">
+            <!--___________________________________tips section________________________________________________-->
+            <div class="tips">
+                <h2>Tips & Articles</h2>
+                <div class="tip-item">
+                    <img src="">
+                    <div class="tip-info">
+                        <h3>How to care for your indoor plants</h3>
+                        <p>Learn the best practices for keeping your indoor plants healthy and thriving.</p>
+                    </div>
+                </div>
+                <div class="tip-item">
+                    <img src="">
+                    <div class="tip-info">
+                        <h3>Top 10 plants for beginners</h3>
+                        <p>Discover the easiest plants to start your gardening journey.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reminders">
+
+                <h2>Reminders</h2>
+
+                <div class="reminder-buttons-container">
+                <button id="daily-button" class="reminder-buttons">Daily</button>
+                <button id="weekly-button" class="reminder-buttons">Weekly</button>
+                <button id="monthly-button" class="reminder-buttons">Monthly</button>
+                <button id="seasonal-button" class="reminder-buttons">seasonal</button>
+                </div>
+
+                <div class="reminder-items-container" id="daily" style="display:flex">
+                    <div class="reminder-item"><input type="checkbox" ><span>daily 1</span></div>
+                    <div class="reminder-item"><input type="checkbox" ><span>daily 2</span></div>
+                    <div class="reminder-item"><input type="checkbox" ><span>daily 3</span></div>
+                </div>
+                <div class="reminder-items-container" id="weekly">
+                    <div class="reminder-item"><input type="checkbox" ><span>weekly 1</span></div>
+                    <div class="reminder-item"><input type="checkbox" ><span>weekly 2</span></div>
+                    <div class="reminder-item"><input type="checkbox" ><span>weekly 3</span></div>
+                </div>
+                <div class="reminder-items-container" id="monthly">
+                    <div class="reminder-item"><input type="checkbox" ><span>monthly 1</span></div>
+                    <div class="reminder-item"><input type="checkbox" ><span>monthly 2</span></div>
+
+                </div>
+                <div class="reminder-items-container" id="seasonal">
+                    <div class="reminder-item"><input type="checkbox" ><span>seasonal 1</span></div>
+                    <div class="reminder-item"><input type="checkbox" ><span>seasonal 2</span></div>
+                    <div class="reminder-item"><input type="checkbox" ><span>seasonal 3</span></div>
+
+                </div>
+
+            </div>
+            
+            </div>
+
+
+<!--_________________________________plant cards section________________________________________________-->
+            <h2 id="My-plants-title">My Plants</h2>
+            <div id="plant-cards-container">
+            <div class="plant-cards">
+                <img src="../Images/welcome background.png">
+                <div class="plant-info">
+                    <h3>Plant Name</h3>
+                    <p>water required</p>
+                    <p>Health: Good</p>
+                </div>
+            </div>
+            <div class="plant-cards">
+                <img src="../Images/welcome background.png">
+                <div class="plant-info">
+                    <h3>Plant Name</h3>
+                    <p>water required</p>
+                    <p>Health: Good</p>
+                </div>
+            </div>
+            <div class="plant-cards">
+                <img src="../Images/welcome background.png">
+                <div class="plant-info">
+                    <h3>Plant Name</h3>
+                    <p>water required</p>
+                    <p>Health: Good</p>
+                </div>
+            </div>
+            <div class="plant-cards">
+                <img src="../Images/welcome background.png">
+                <div class="plant-info">
+                    <h3>Plant Name</h3>
+                    <p>water required</p>
+                    <p>Health: Good</p>
+                </div>
+            </div>
+                        <div class="plant-cards">
+                <img src="../Images/welcome background.png">
+                <div class="plant-info">
+                    <h3>Plant Name</h3>
+                    <p>water required</p>
+                    <p>Health: Good</p>
+                </div>
+            </div>
+                        <div class="plant-cards">
+                <img src="../Images/welcome background.png">
+                <div class="plant-info">
+                    <h3>Plant Name</h3>
+                    <p>water required</p>
+                    <p>Health: Good</p>
+                </div>
+            </div>
+                        <div class="plant-cards">
+                <img src="../Images/welcome background.png">
+                <div class="plant-info">
+                    <h3>Plant Name</h3>
+                    <p>water required</p>
+                    <p>Health: Good</p>
+                </div>
+            </div>
+                        <div class="plant-cards">
+                <img src="../Images/welcome background.png">
+                <div class="plant-info">
+                    <h3>Plant Name</h3>
+                    <p>water required</p>
+                    <p>Health: Good</p>
+                </div>
+            </div>
+            <div class="plant-cards">
+                <img src="../Images/welcome background.png">
+                <div class="plant-info">
+                    <h3>Plant Name</h3>
+                    <p>water required</p>
+                    <p>Health: Good</p>
+                </div>
+            </div>
+            <div class="plant-cards">
+                <img src="../Images/welcome background.png">
+                <div class="plant-info">
+                    <h3>Plant Name</h3>
+                    <p>water required</p>
+                    <p>Health: Good</p>
+                </div>
+            </div>
+            <div class="plant-cards">
+                <img src="../Images/welcome background.png">
+                <div class="plant-info">
+                    <h3>Plant Name</h3>
+                    <p>water required</p>
+                    <p>Health: Good</p>
+                </div>
+            </div>
+            </div>
+
+            <button id="add"><img src="../Icons/add.png">Add Plant</button>
+
+            <div id="add_plant_window">
+                <div id="close_add_plant_window"><img src="../Icons/close.png"></div>
+                <div id ="add_plant_content">
+                <div id="drop_zone">
+                    <p>Drag & Drop Image Here</p>
+                    <input type="file" id="file_input" accept="image/*">
+                </div>
+                <img id="preview" width="200" style="margin-top:10px; display:none;">
+                <input id="plant_name" type="text"  Placeholder="Plant-Name">
+                <button id="submit">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </main>
+    </div>
+    <div id="ai-chat-button"></div>
+    <script src="../JS/Home.js"></script>
 </body>
 </html>
