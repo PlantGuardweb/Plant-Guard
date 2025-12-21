@@ -13,6 +13,14 @@
             min-height: 100vh;
         }
 
+        button {
+            background: none;
+            border: none;
+            font: inherit;
+            cursor: pointer;
+            color: inherit;
+        }
+
         a {
             text-decoration: none;
             color: inherit;
@@ -44,6 +52,13 @@
             height: 100vh;
         }
 
+        .navigation {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px; 
+            vertical-align: middle; 
+        }
+
         .nav-list {
             display: flex;
             flex-direction: column;
@@ -52,9 +67,7 @@
         }
 
         .nav-item {
-            display: flex;
-            align-items: center;
-            padding: 12px 16px;
+            padding: 1px 1px;
             border-radius: 12px;
             color: #889990;
             font-weight: 500;
@@ -62,26 +75,19 @@
             cursor: pointer;
         }
 
-        .nav-item i {
-            margin-right: 12px;
-            font-size: 1.2rem;
-            width: 24px;
-            text-align: center;
+        .nav-link {
+            display: flex; 
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding: 5px 10px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
-        .nav-item:hover {
-            background-color: #17201a;
-            color: #fff;
-        }
-
-        /* Active State for Profile */
-        .nav-item.active {
-            background-color: #1a4d2e; /* Darker green bg for active item */
+        .nav-link.active {
+            background-color: #b0e3c4; /* Darker green bg for active item */
             color: #19e64d; /* Bright green text */
-        }
-        
-        .nav-item.active i {
-            color: #19e64d;
         }
 
         /* --- MAIN CONTENT --- */
