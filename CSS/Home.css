@@ -548,3 +548,8 @@ search-bar button img{
 #ai-chat-button:hover {
     background-color: #367c39;
 }
+
+#ai-chat-button img {
+    width: 30px;
+    height: 30px;
+}
